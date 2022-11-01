@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="advancetestng.DataProviderExample">
+      <class name="brokenlinks.BrokenLinkExample2">
         <methods>
-          <include name="testLoginOfVtiger"/>
+          <include name="testLinks"/>
         </methods>
-      </class> <!-- advancetestng.DataProviderExample -->
+      </class> <!-- brokenlinks.BrokenLinkExample2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -31,28 +31,28 @@ public class ExtentDemo extends SeleniumUtility{
 	@Test
 	public void TestCase1() throws IOException {
 		WebDriver driver=setUp("chrome", "https://www.google.com");
-		if (getPageTitle().equals("Google")) {
+		if (getCurrentTitleOfApplication().equals("Google")) {
 			test.log(LogStatus.PASS,test.addScreenCapture(screenShot(driver)), "Navigated to the specified URL successfully and page tile is also validated");
 			//System.out.println("Navigated to the specified URL successfully and page tile is also validated");
 		} else {
 			test.log(LogStatus.FAIL,test.addScreenCapture(screenShot(driver)), "Google page validation got failed");
 			//System.out.println("Google page validation got failed");
-			Assert.assertTrue(getPageTitle().equals("Google"));
+			Assert.assertTrue(getCurrentTitleOfApplication().equals("Google"));
 		}
-		tearDown();
+		cleanUp();
 	}
 	@Test
 	public void TestCase2() throws IOException {
 		WebDriver driver=setUp("chrome", "https://www.google.com");
-		if (getPageTitle().equals("Google1")) {
+		if (getCurrentTitleOfApplication().equals("Google1")) {
 			test.log(LogStatus.PASS,test.addScreenCapture(screenShot(driver)), "Navigated to the specified URL successfully and page tile is also validated");
 			//System.out.println("Navigated to the specified URL successfully and page tile is also validated");
 		} else {
 			test.log(LogStatus.FAIL,test.addScreenCapture(screenShot(driver)), "Google page validation got failed");
 			//System.out.println("Google page validation got failed");
-			Assert.assertTrue(getPageTitle().equals("Google1"));
+			Assert.assertTrue(getCurrentTitleOfApplication().equals("Google1"));
 		}
-		tearDown();
+		cleanUp();
 	}
 	@AfterClass
 	public static void endTest() {

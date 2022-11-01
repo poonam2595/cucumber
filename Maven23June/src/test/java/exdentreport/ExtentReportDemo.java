@@ -32,9 +32,6 @@ public class ExtentReportDemo{
 		
 	@Test
 	public void testCase1(){
-		//extent.startTest("TestCaseName", "Description")
-		//TestCaseName � Name of the test
-		//Description � Description of the test
 		//Starting test
 		test = report.startTest("TestCase1");
 		Assert.assertTrue(true);
