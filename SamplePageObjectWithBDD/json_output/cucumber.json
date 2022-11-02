@@ -1,0 +1,277 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4454900300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user already in login page",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.user_already_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3048580000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user login successfully with valid data",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.user_login_successfully_with_valid_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135206500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click on navigation bar",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.click_on_navigation_bar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1517669300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "go to Marketing and select Leads",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.go_to_marketing_and_select_leads()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-10T04:08:21.406Z",
+        "line": 17,
+        "name": "Create new lead with name as QA",
+        "description": "",
+        "id": "create-lead-in-vtiger-application;create-new-lead-with-name-as-\u003cfirstname\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3946607800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on Add Leads button and enter firstname as QA ,last as Champak ,number as 123 and click on save button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "QA",
+                  "offset": 49
+                },
+                {
+                  "val": "Champak",
+                  "offset": 61
+                },
+                {
+                  "val": "123",
+                  "offset": 80
+                }
+              ],
+              "location": "stepdefinitions.VtigerLeadStepDef.enter_firstname_as_last_as_number_as_and_click_on_save_button(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1556649500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click on All link",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.click_on_all_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70076000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "varify lead is created with Champak",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Champak",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.VtigerLeadStepDef.varify_lead_is_created_with(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 347284200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "close the browser",
+            "match": {
+              "location": "stepdefinitions.ActitimeStepDef.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3278649000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user already in login page",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.user_already_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2879898300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user login successfully with valid data",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.user_login_successfully_with_valid_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133699000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click on navigation bar",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.click_on_navigation_bar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2193011900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "go to Marketing and select Leads",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.go_to_marketing_and_select_leads()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-10T04:08:36.576Z",
+        "line": 20,
+        "name": "Delete all leads",
+        "description": "",
+        "id": "create-lead-in-vtiger-application;delete-all-leads",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 178524200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "click on select all leads checkbox",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.click_on_select_all_leads_checkbox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 492986200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "click on delete logo",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.click_on_delete_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 644018600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user will get a popup to comfirm deletion, select Yes",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.user_will_get_a_popup_to_comfirm_deletion_select_yes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2075956300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "varify that all leads deleted",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.varify_that_all_leads_deleted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 306004100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "close the browser",
+            "match": {
+              "location": "stepdefinitions.ActitimeStepDef.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Create lead in Vtiger application",
+    "description": "",
+    "id": "create-lead-in-vtiger-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/VtigerLead.feature",
+    "tags": []
+  }
+]
